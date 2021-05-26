@@ -1,0 +1,76 @@
+body{
+  background: #100a1c;
+}
+
+h1{
+  text-align: center;
+  color: grey;
+  font-size: 50px;
+}
+
+.create-user{
+  position: fixed;
+  top: 30%;
+  left: 40%; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow:10px 10px 50px white;
+  
+}
+input{
+  width: 400px;
+  height: 40px;
+  margin: 10px;
+  color: whitesmoke;
+  font-weight: bold;
+  background: transparent;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+h5{
+  color: red;
+}
+
+button{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background: transparent;
+  border: 3px solid grey;
+  color: grey;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover{
+  transform:scale(1.08);
+}
+
+.login input:invalid:required {
+  border: 2px solid red;
+}
+
+.login​ input:valid:required + h5 {
+  display: none;
+}
+.login input:valid:required {
+ border: 2px solid green;
+}
+
+.login:invalid .when-valid {
+  display: none;
+}
+
+.login:valid .when-invalid {
+  display: none;
+}
+
+.errors{
+  color: red;
+  font-size: 20px;
+  margin: 10px;
+}

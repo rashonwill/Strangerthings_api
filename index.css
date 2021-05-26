@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dela+Gothic+One&display=swap');
+
+body{
+  background:#100a1c;
+}
+
+.glitch{
+  position: fixed;
+  top: 30%;
+  left: 30%; 
+  text-align: center;
+  color: whitesmoke;
+  font-size: 7em;
+  font-weight: bold;
+  font-family: "Anton"; 
+  text-shadow:0.05em 0 0 #403B49, -0.025em -0.05em 0 grey, 0.025em 0.05em 0 darkblue;
+  animation: glitch infinite 600ms;
+}
+
+span{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.glitch span:first-child{
+  animation: glitch infinite 700ms;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+  opacity: .7;
+}
+
+.glitch span:last-child{
+  animation: glitch infinite 400ms;
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+  transform: translate(-0.025em, -0.0125em);
+  opacity: .7;
+}
+ 
+
+@keyframes glitch{
+  0% {
+     text-shadow:
+       0.05em 0 0 #403B49, 
+       -0.05em -0.025em 0 grey, 
+       -0.025em 0.05em 0 darkblue;
+  }
+
+  
+    15% {
+   text-shadow: 
+     -0.05em -0.025em 0 #403B49,                       0.025em 0.025em 0 grey, 
+     -0.05em -0.05em 0 darkblue;
+  }
+  
+      50% {
+   text-shadow: 
+     0.025em 0.05em 0 #403B49,                       0.05em 0 0 grey, 
+    0 -0.05em 0 darkblue;
+  }
+  
+
+        100% {
+   text-shadow: 
+     -0.025em 0 0 #403B49,                       -0.025em -0.025em 0 grey, 
+    -0.025em -0.05em 0 darkblue;
+  }
+  
+  
+}

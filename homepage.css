@@ -1,0 +1,194 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+*,
+*:before,
+*:after{
+   -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: graysc
+}
+
+body{
+  background: #100a1c;
+}
+
+body::-webkit-scrollbar{
+    width: 12px;
+  }
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #403B49; 
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #403B49; 
+  border-radius: 5px;
+}
+
+.opts{
+  background: transparent;
+  color: white;
+  margin: 1rem auto;
+  width: 100%;
+  height: 80px;
+/*   border: 2px solid grey; */
+  border-radius: 10px; 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  padding: 5px;
+}
+
+i{
+  margin-right: 10px;
+}
+
+ul {
+  display: flex;
+  margin-top: -5px;
+  
+}
+
+ul li{
+  list-style-type: none;
+  margin: 20px;  
+  cursor: pointer;
+}
+
+.pro{
+  float: right;
+  margin-top: -95px;
+}
+
+#profile{
+  
+  float: right;
+  cursor: pointer;
+  display: flex;
+}
+
+#avi{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin-top: -18px;
+  margin-left: -25px;
+}
+
+h1{
+  color: white;
+  font-size: 50px;
+  text-align: center;
+}
+
+.hidden{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-left: -10px;
+  position: absolute;
+  margin-top: 40px;
+  background: grey; 
+  border-radius: 10px;
+  border: 3px solid white;
+  width: 170px;
+  padding: 15px;
+  z-index: 1;
+  transform: scale(0);
+}
+
+.hidden:hover{
+  background: #100a1c;
+}
+
+.hidden.active{
+  transform: scale(1);
+}
+
+.slider-container{
+  display: block;
+  margin: 1rem auto;
+  width: 1500px;
+  height: 500px;
+/*   background: #403B49; */
+  border-radius: 10px;
+  box-shadow:10px 10px 50px red;
+  padding: 30px;
+}
+
+
+.post{
+  margin-top: 10px;
+  display: flex;
+  transition: all 0.5s;
+  
+}
+
+.post-card{
+  border: 3px solid grey;
+  background: #100a1c;
+  width: 210px;
+  height: 340px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 8px;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.post-card:hover{
+  transform: scale(1.05);
+  z-index: 10;
+}
+
+.item-info{
+  margin-top: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+  font-size: 20px;
+}
+
+.interact{
+  position: absolute;
+  font-size: 22px;
+  margin-top: 140px;
+  margin-bottom: 20px;
+  margin-left: -65px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+}
+
+.iconbtn{
+  width: 50px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-size: 22px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+}
+
+.useravi{
+  padding: 10px;
+  display: block;   
+}
+
+
+.stranger{
+  color: RED;
+}

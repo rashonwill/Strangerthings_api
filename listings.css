@@ -1,0 +1,430 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+body{
+  background: #100a1c;
+}
+
+body::-webkit-scrollbar{
+    width: 12px;
+  }
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #403B49; 
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #403B49; 
+  border-radius: 5px;
+}
+
+.opts{
+  background: transparent;
+  color: white;
+  margin: 1rem auto;
+  width: 100%;
+  height: 80px;
+/*   border: 2px solid grey; */
+  border-radius: 10px; 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  padding: 5px;
+}
+i{
+  margin-right: 8px;
+}
+
+#searchbar{
+  position: absolute;
+  left: 25%;
+  top:10%;
+margin: 1rem auto; 
+margin-right: 50px;  
+height: 40px;
+}
+
+
+ul {
+  display: flex;
+  margin-top: -5px;
+}
+
+ul li{
+  list-style-type: none;
+  margin: 20px;  
+  cursor: pointer;
+}
+
+
+.pro{
+  float: right;
+  margin-top: -95px;
+}
+
+#profile{
+  
+  float: right;
+  cursor: pointer;
+  display: flex;
+}
+
+#avi{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin-top: -18px;
+  margin-left: -25px;
+}
+
+h1{
+  color: grey;
+  font-size: 30px;
+}
+
+input{
+  display: flex;
+  margin: 1rem auto;
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid grey;
+  color: white;
+  font-weight: bold;
+}
+
+.hidden{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-left: -10px;
+  position: absolute;
+  margin-top: 30px;
+  background: grey; 
+  border-radius: 10px;
+  border: 3px solid white;
+  width: 130px;
+  padding: 15px;
+  z-index: 10;
+  transform: scale(0);
+}
+
+.hidden:hover{
+  background: #100a1c;
+}
+
+.hidden.active{
+  transform: scale(1);
+}
+
+.content{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem auto;
+  width: 95%;
+  height: 100vh;
+  padding: 15px;
+  box-shadow:10px 10px 50px #403B49;
+
+    
+}
+
+  .post{ 
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  position: absolute;
+  height: 100vh;
+  top: 20%;
+  overflow-y: scroll;
+  
+}  
+
+h2{
+  margin-top: 0;
+}
+
+h4{
+  margin-top: 0;
+}
+
+h3{
+  margin-top: 0;
+}
+
+small{
+  float: right;
+  margin-top: -45px;
+}
+
+.fa-pencil-square-o{
+  float: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+
+.post-card{
+  border: 3px solid grey;
+  background: #100a1c;
+  width: 510px;
+  height: 220px;
+  max-height: 350px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 8px;
+  color: white;
+  padding: 20px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.edit-options{
+ position: absolute; 
+  z-index: 1;
+  width: 110px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 250px;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  background: #403B49;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 8px;
+  display: none;
+}
+
+.edit-options.active {
+  display: block;
+}
+
+.edit-options:after{
+  bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: white;
+  border-width: 8px;
+	margin-left: 30px; 
+}
+
+
+.edit-options ul li{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.item-info{
+  margin-top: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: normal;
+    font-size: 20px;
+}
+
+.interact{
+  position: absolute;
+  font-size: 30px;
+  margin-top: 150px;
+  margin-bottom: -50px;
+  margin-left: -20px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  text-align: center;
+}
+
+
+.title{
+  display: flex;
+  flex-direction: row;
+}
+
+.useravi{
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+}
+
+.new-post{
+float: right;
+bottom: 0;
+margin-right: 15%;
+position: sticky;
+position: -webkit-sticky; /* Safari */
+border-radius: 50%;
+border: 5px solid #403B49;
+width: 45px;
+height: 45px;
+cursor: pointer;
+background: whitesmoke; 
+padding: 5px;
+top: 0;
+z-index: 10;
+} 
+
+#pen{
+  width: 50px;
+  height: 50px;
+  margin-top: -7px;
+  margin-right: 10px;
+  bottom: 0;
+  
+}
+
+.fa-pencil{
+  font-size: 35px;
+
+}
+
+.post-form{
+  top: 40%;
+  left: 35%;
+  position: fixed;
+  width: 500px;
+  height: 320px;
+  border:2px solid grey;
+  border-radius: 10px;
+  background: #403B49; 
+  color: white;
+  font-weight: bold;
+  transform: scale(0);
+  z-index: 10;
+}
+
+.post-form.active{
+  transform:scale(1);
+}
+
+.cancel{
+  background: #403B49;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  margin-left: 400px;
+  margin-top: 5px;
+}
+
+textarea{
+  display:block;
+  margin: 1rem auto;
+  width: 50%;
+  height: 100px;
+  background: transparent;
+  color: white;
+}
+
+button{
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background: transparent;
+  border: 2px solid grey;
+  color: white;
+  display: block;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+.comments-section{
+   position: absolute;   
+   margin-left: -23px;  
+   margin-top: -50px; 
+   width: 550px;
+   height: 220px;
+  /*  max-height: 220px; */
+   background-color: #403B49; 
+   transition:all .5s ease-in;
+   border: 3px solid grey;
+   border-radius: 10px;
+   overflow-y: scroll;
+   z-index: 10; 
+  display: none;  
+    
+  }
+  
+  .comments-section.active{
+    display:block;
+  }
+
+.comments-section::-webkit-scrollbar{
+    width: 12px;
+  }
+
+.comments-section::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #403B49; 
+  border-radius: 5px;
+}
+
+.comments-section::-webkit-scrollbar-thumb {
+  background: #403B49; 
+  border-radius: 10px;
+}
+
+
+.comments{
+  max-height: 300px;
+  margin: 0;
+  padding: 15px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-comment{
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+}
+.fa-comment{
+  font-size: 22px;
+}
+
+.fa-heart{
+  font-size: 22px;
+}
+.fa-heart.active{
+  color: red;
+}
+
+ol{
+  margin: 15px;
+  display: flex;
+  margin-left: 320px;
+}
+
+ol li{ 
+font-size: 18px;
+float: left;
+}
+
+.twocents{
+background: #100a1c;
+width: 50%;
+height: 30px;
+top: 172px;
+bottom: 0;
+border-radius: 5px;
+position: sticky;
+position: -webkit-sticky; /* Safari */
+color: white;
+
+}
+
+
+
+
+

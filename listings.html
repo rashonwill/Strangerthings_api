@@ -1,0 +1,64 @@
+<head>
+    <link rel="stylesheet" href="/listings.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script defer src="/listings.js"></script>
+
+    </head>
+
+  <header>
+    <div class="opts">
+      <ul>
+        <li><a href="homepage.html"><i class="fa fa-home" aria-hidden="true">Home</a></i></li>
+        <li><a href="myitems.html"><i class="fa fa-list-alt" aria-hidden="true">My Items</a></i></li>
+        <li><a href="#"><i class="fa fa-comments" aria-hidden="true">Messages</a></i></li>
+      </ul>
+      <ul class="pro">
+        <li id="profile">My Profile<i class="fa fa-caret-down" aria-hidden="true"></i>
+      <ol class="hidden">
+            <li><i class="fa fa-sign-in" aria-hidden="true"></i><a href="login.html">Login</a></li>
+            <li class="logout"><i class="fa fa-sign-out" aria-hidden="true"></i><a href="index.html">Logout</a></li>
+          </ol>    
+          
+          
+        </li>
+        <li><img id ="avi" src="https://user-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/60063/467371_21871.png"/></li>   
+        
+      </ul>
+      
+        
+  <input id='searchbar' type ="search" placeholder="Search"/>
+    </div> 
+  
+  
+  </header>
+  
+  
+  
+  <main>
+  <div class ="content">
+    <div class="post"> 
+  </div>  
+   </div>
+    
+   <div class="new-post">
+    <img id ="pen"src="https://img.icons8.com/pastel-glyph/64/4a90e2/quill-pen.png"/>
+     </div> 
+    
+  </main>
+
+
+  
+  <div class="post-form">
+    
+    <button class ="cancel">&#10060</button>
+  
+    <form>
+    <input id="Title" type="text" placeholder="Description">
+      <input id="Price" type="text" placeholder="Price">
+    <textarea id="Details" type="textarea" placeholder="Details">
+    </textarea>
+       <button type='submit' class="postMe"> Post </button>
+    </form>
+  </div>   
